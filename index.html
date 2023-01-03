@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="active1" >
+        <header>
+            <button class="restart">NEW GAME</button>
+        </header>
+
+        <div class="players">
+            <h1>
+                <span class="player-0">PLAYER 1</span> 
+                <span class="score score-0">0</span>
+            </h1>
+
+            <h1>
+                <span class="player-1">PLAYER 2</span>
+                <span class="score score-1">0</span>
+            </h1>
+        </div>
+
+        <div class="current">
+            <div class="red player-1-current">
+                <p>current
+                    <span class="current-reading current-0">0</span>
+                </p>
+            </div>
+
+            <ul>
+                <button class="btn-roll">ROLL DICE</button>
+                <button class="btn-hold">HOLD</button>
+            </ul>
+
+            <div class="red player-2-current">
+                <p>current
+                    <span class="current-reading current-1">0</span>
+                </p>
+            </div>
+        </div>
+
+        <img src="images/dice 2.png" alt="" class="dice">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

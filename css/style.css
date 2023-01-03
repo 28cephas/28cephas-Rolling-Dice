@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(153, 75, 231);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+
+
+main{
+    background: rgb(247, 247, 247);
+    box-shadow: 0 0 3px rgb(73, 71, 71);
+    display: grid;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin: 0 10%;
+    padding: 2rem 0;
+}
+
+.dice{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem ;
+}
+
+
+button{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: large;
+    color: rgb(78, 73, 73);
+    cursor: pointer;
+}
+
+.players{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.score{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.current{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 2rem 0;
+}
+
+.current-reading{
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(247, 245, 245);
+}
+
+.red{
+    background: rgb(201, 25, 25);
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+main.active1{
+    background: linear-gradient(to right,
+    white 0%,
+    white 50%,
+    hsl(223, 54%, 97%) 0%,
+    hsl(223, 54%, 97%) 100%
+    );
+}
+
+main.active1 .player-0{
+    text-decoration: underline;
+}
+
+main.active2 .player-1{
+    text-decoration: underline;
+}
+
+main.active2{
+    background: linear-gradient(to left,
+    white 0%,
+    white 50%,
+    hsl(223, 54%, 97%) 0%,
+    hsl(223, 54%, 97%) 100%
+    );
+}
+
+@media(max-width:500px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    main{
+        width: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+
+    .players{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .current{
+        display: flex;
+        justify-content: space-between;
+        margin: 5rem 0 0;
+    }
+}
+
+@media (max-width:300px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        font-size: 10px;
+    }
+
+    main{
+        padding: 2rem 0.5rem;
+    }
+}
